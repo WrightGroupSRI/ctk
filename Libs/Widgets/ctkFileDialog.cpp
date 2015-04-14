@@ -114,6 +114,7 @@ ctkFileDialog::ctkFileDialog(QWidget *parentWidget,
   :QFileDialog(parentWidget, caption, directory, filter)
   , d_ptr(new ctkFileDialogPrivate(*this))
 {
+  setOption(QFileDialog::DontUseNativeDialog);
   Q_D(ctkFileDialog);
   d->init();
 }
