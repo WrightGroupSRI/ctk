@@ -77,8 +77,6 @@ macro(ctkMacroSetupQt)
 
     mark_as_superbuild(QT_QMAKE_EXECUTABLE)
 
-  else()
-    message(FATAL_ERROR "error: Qt4 was not found on your system. You probably need to set the QT_QMAKE_EXECUTABLE variable")
   endif()
 
 endmacro()
